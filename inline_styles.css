@@ -1,0 +1,15 @@
+.legalInfoDisplay{display: flex; align-items: left; font-size: 0.6rem; margin-top: 15px; margin-bottom: -10px;}
+.upload {margin-top: 20px;display: flex;gap: 10px;align-items: center;}
+.upload p {margin: 0;}
+.syllabus-btn{border-radius: 0.25em; font-size: 0.7rem;font-weight: 700;letter-spacing: 0.2px;line-height: 1rem;padding: 0.55rem 1.5rem;display: inline-block;border-width: 0px;user-select: none;}
+.syllabus-btn-primary{background-color: #006fbf; color: #fff;}
+.syllabus-btn-primary:hover{background-color: #004489;}
+.syllabus-btn:focus {outline: 2px solid #006fbf;outline-offset: 2px;}
+.syllabus-container {text-align: center;border-radius: 10px;display: flex;flex-direction: column;align-items: center;justify-content: center;width: 100%;}
+.icon img {width: 50px;height: 50px;}
+.title {font-size: 24px;font-weight: 600;margin: 5px 0 5px 0;}
+.title-link {text-decoration: none;transition: color 0.3s; }
+.disabled-link {pointer-events: none; color: #999 !important;text-decoration: none;}
+.feedback {position: relative;padding: 15px 15px;margin: 15px 0 15px 0;border: 1px solid transparent;border-radius: .25rem;}
+.feedback-info {color: #0f5132;background-color: #d1e7dd;border-color: #badbcc;}
+.feedback-danger {color: #842029;background-color: #f8d7da;border-color: #f5c2c7;}

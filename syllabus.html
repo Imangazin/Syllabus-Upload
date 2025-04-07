@@ -1,0 +1,23 @@
+<input type="text" id="OrgUnitPath" value="{OrgUnitPath}" style="display: none;">
+<div id="syllabus-container"></div>
+<div class="syllabus-container">
+    <div class="icon"><img src="/shared/Widgets/SyllabusUpload/img/file-document.svg" alt="Course Syllabus"></div>
+    <span class="title"><a href="#" class="title-link disabled-link" target="_parent" id="syllabusLink">Course Syllabus</a></span>
+    <p>The syllabus contains <a href="https://campusstore.brocku.ca/CourseSearch/mycourses" target="_blank" rel="noopener">course materials</a> information, dates, and other critical course details for your review.</p>
+</div>
+<div id="syllabusUpload"></div>
+
+<script src="/shared/Widgets/SyllabusUpload/js/syllabus.js?v=1.2"></script>
+
+<script>
+
+window.addEventListener('load', function () {
+    $.get( "/shared/Widgets/SyllabusUpload/link_to_custom_styles.html", function( data ) {
+        $( "#syllabus-container" ).html( data );
+    });
+
+    OrgUnitPath = document.getElementById("OrgUnitPath").value;
+    widgetLoad({RoleId}, {OrgUnitId}, OrgUnitPath, {widgetid});
+	
+})
+</script>
